@@ -1,0 +1,32 @@
+<style>
+	body {
+		margin: 0;
+		background: black;
+	}
+	canvas {
+            /* top: 50%;
+            left: 50%; */
+            z-index: 1;
+            display: block;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            animation: heart 1.75s ease infinite
+    }
+    @keyframes heart {
+            0% {
+                transform: scale(1.4);
+            }
+            30% {
+                transform: scale(1.0);
+            } 
+            80% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1.4);
+            }
+        }
+</style>
+<canvas></canvas>
+<script src="./index.js"></script>
+
