@@ -1,0 +1,151 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+
+
+.toggle {
+    position: fixed;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background: url(heartbutton.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle.active {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 1s linear;
+}
+
+.heartBox {
+    opacity: 0;   
+}
+
+.heartBox.active {
+    color: #FFFFFF;
+    text-align: center;
+
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    opacity: 1;
+    animation: heartBeat 1.75s ease infinite
+}
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+canvas {
+	z-index: 1;
+	display: block;
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1.0);
+    }
+    30% {
+        transform: scale(0.78);
+    }
+    80% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
+            h1 {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: h1display infinite 27s;
+            }
+            h2 {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: h2display infinite 27s;
+            }
+            h3 {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: h3display infinite 27s;
+            }
+            h4 {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: h4display infinite 27s;
+            }
+            h5 {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: h5display infinite 27s;
+            }
+            h6 {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: h6display infinite 27s;
+            }
+
+            a {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: adisplay infinite 27s;
+            }
+            b {
+                display: none;
+                position: absolute;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                animation: bdisplay infinite 27s;
+            }
+
+            @keyframes ahhhhhdeadline {
+                0% { content:"如果下次遇见你";}
+                10% { content:"希望是在晴天里";}
+                20% { content:"要对你说的话";}
+                30% { content:"想来想去是你我的记忆";}
+                40% { content:"就算很远的距离";}
+                50% { content: "也要紧紧抱着你"; }
+                60% { content: "你的侧脸映在湖面光线"; }
+                70% { content: "照在树林里"; }
+            }
+

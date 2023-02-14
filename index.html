@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>希望不久能在见到你。</title>
+		<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>如果下次遇见你</h1>
+		<h2>希望是在晴天里</h2>
+		<h3>要对你说的话</h3>
+		<h4>想来想去是你我的记忆</h4>
+		<h5>就算很远的距离</h5>
+		<h6>也要紧紧抱着你</h6>
+		<a>你的侧脸映在湖面光线</a>
+		<b>照在树林里</b>
+		<div class="toggle"></div>
+		<audio id="audio">
+			<source src="cucgiongroi.wav" type="audio/mpeg">
+		</audio>
+		<canvas class="heartBox" id="heartAnimation">
+			<canvas class="heartBox" id="heartAnimation">
+			</canvas>
+		</canvas>
+		<script>
+			const navigation = document.querySelector('.heartBox');
+			const lyricstarter = document.querySelector('.musiclyrics');
+			document.querySelector('.toggle').onclick = function(){
+				this.classList.toggle('active');
+				navigation.classList.toggle('active');
+				audio.volume = 0.3;
+				audio.play();
+			}
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
